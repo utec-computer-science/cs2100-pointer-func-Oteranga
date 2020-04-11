@@ -1,0 +1,12 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/alejandrootero/Documents/UTEC/Ciclo 5/Git/cs2100-pointer-func-Oteranga/main.cpp
+iostream
+-
+
