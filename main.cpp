@@ -39,6 +39,10 @@ void  _b_double_ (void * _vector_, int _i,int _k){
 
 void  _b_char_ (void * _vector_, int _i,int _k){
     // TODO:  QUE COSA PONGO AQUI?
+    char *arr= reinterpret_cast<char*>(_vector_);
+    if(arr[_i]>arr[_k]){
+        swap(arr[_i],arr[_k]);
+    }
 }
 
 template <typename T>
@@ -71,6 +75,7 @@ int main(){
     print(_array_3,5);
     _bubblesort_(_array_4,_b_char_,6);
     // PRINT
+    print(_array_4,6);
 
     return 0;
 }
