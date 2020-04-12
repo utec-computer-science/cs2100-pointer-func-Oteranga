@@ -31,6 +31,10 @@ void  _b_float_ (void * _vector_, int _i,int _k){
 
 void  _b_double_ (void * _vector_, int _i,int _k){
     // TODO:  QUE COSA PONGO AQUI?
+    double *arr= reinterpret_cast<double*>(_vector_);
+    if(arr[_i]>arr[_k]){
+        swap(arr[_i],arr[_k]);
+    }
 }
 
 void  _b_char_ (void * _vector_, int _i,int _k){
@@ -46,7 +50,7 @@ void print(T arr[],size_t n){
 }
 
 int main(){
-    int i = 0;
+    //int i = 0;
     srand(time(NULL));
     //int _array_1 [5] = {2,20,7,108,9}; // RANDOMS
     int _array_1 [5];
@@ -64,6 +68,7 @@ int main(){
     print(_array_2,5);
     _bubblesort_(_array_3,_b_double_,5);
     // PRINT
+    print(_array_3,5);
     _bubblesort_(_array_4,_b_char_,6);
     // PRINT
 
