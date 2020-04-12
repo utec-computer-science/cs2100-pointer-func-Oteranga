@@ -3,4 +3,4 @@ project(cs2100-pointer-func-Oteranga)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(cs2100-pointer-func-Oteranga main.cpp _b_int_.cpp)
+add_executable(cs2100-pointer-func-Oteranga main.cpp)
