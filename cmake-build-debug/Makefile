@@ -123,6 +123,33 @@ cs2100-pointer-func-Oteranga/fast:
 	$(MAKE) -f CMakeFiles/cs2100-pointer-func-Oteranga.dir/build.make CMakeFiles/cs2100-pointer-func-Oteranga.dir/build
 .PHONY : cs2100-pointer-func-Oteranga/fast
 
+_b_int_.o: _b_int_.cpp.o
+
+.PHONY : _b_int_.o
+
+# target to build an object file
+_b_int_.cpp.o:
+	$(MAKE) -f CMakeFiles/cs2100-pointer-func-Oteranga.dir/build.make CMakeFiles/cs2100-pointer-func-Oteranga.dir/_b_int_.cpp.o
+.PHONY : _b_int_.cpp.o
+
+_b_int_.i: _b_int_.cpp.i
+
+.PHONY : _b_int_.i
+
+# target to preprocess a source file
+_b_int_.cpp.i:
+	$(MAKE) -f CMakeFiles/cs2100-pointer-func-Oteranga.dir/build.make CMakeFiles/cs2100-pointer-func-Oteranga.dir/_b_int_.cpp.i
+.PHONY : _b_int_.cpp.i
+
+_b_int_.s: _b_int_.cpp.s
+
+.PHONY : _b_int_.s
+
+# target to generate assembly for a file
+_b_int_.cpp.s:
+	$(MAKE) -f CMakeFiles/cs2100-pointer-func-Oteranga.dir/build.make CMakeFiles/cs2100-pointer-func-Oteranga.dir/_b_int_.cpp.s
+.PHONY : _b_int_.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -159,6 +186,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... cs2100-pointer-func-Oteranga"
+	@echo "... _b_int_.o"
+	@echo "... _b_int_.i"
+	@echo "... _b_int_.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

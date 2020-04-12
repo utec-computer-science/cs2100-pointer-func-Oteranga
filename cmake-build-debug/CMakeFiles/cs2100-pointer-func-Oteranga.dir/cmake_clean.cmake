@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/cs2100-pointer-func-Oteranga.dir/main.cpp.o"
+  "CMakeFiles/cs2100-pointer-func-Oteranga.dir/_b_int_.cpp.o"
   "cs2100-pointer-func-Oteranga.pdb"
   "cs2100-pointer-func-Oteranga"
 )
