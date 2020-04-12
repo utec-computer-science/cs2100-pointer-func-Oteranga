@@ -7,23 +7,26 @@ void * _bubblesort_(
         void (*_puntero_) (void *, int _i, int _k),
         int _tam_
 ){
-    int _k = 0;
     for (int i = 0; i < _tam_ ; i ++)
         for(int k = 0; k < _tam_-1; k++)
-            _puntero_(_array_,k,_k);
+            _puntero_(_array_,k,k+1);
     return _array_;
 }
 
 void  _b_int_ (void * _vector_, int _i,int _k){
     // TODO:  QUE COSA PONGO AQUI?
     int *arr= reinterpret_cast<int*>(_vector_);
-    if(arr[_i]>arr[_i+1]){
-        swap(arr[_i],arr[_i+1]);
+    if(arr[_i]>arr[_k]){
+        swap(arr[_i],arr[_k]);
     }
 }
 
 void  _b_float_ (void * _vector_, int _i,int _k){
     // TODO:  QUE COSA PONGO AQUI?
+    float *arr= reinterpret_cast<float*>(_vector_);
+    if(arr[_i]>arr[_k]){
+        swap(arr[_i],arr[_k]);
+    }
 }
 
 void  _b_double_ (void * _vector_, int _i,int _k){
@@ -33,9 +36,10 @@ void  _b_double_ (void * _vector_, int _i,int _k){
 void  _b_char_ (void * _vector_, int _i,int _k){
     // TODO:  QUE COSA PONGO AQUI?
 }
+
 template <typename T>
 void print(T arr[],size_t n){
-    for(T i=0; i<n; i++){
+    for(size_t i=0; i<n; i++){
         cout<<arr[i]<<" ";
     }
     cout<<endl;
@@ -57,6 +61,7 @@ int main(){
     print(_array_1,5);
     _bubblesort_(_array_2,_b_float_,5);
     // PRINT
+    print(_array_2,5);
     _bubblesort_(_array_3,_b_double_,5);
     // PRINT
     _bubblesort_(_array_4,_b_char_,6);
